@@ -12,6 +12,23 @@ body {
     background: #16323a;
 }
 
+h1, h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+h1 {
+    color: #d03d3d;
+    font-size: 40px;
+}
+
+h3 {
+    color: #BBB;
+}
+
 .grid {
     display: grid;
 }
@@ -90,16 +107,17 @@ nav .menu-links a i:hover{
 article {
     height: 100%;
     padding: 20px;
+    align-items: center;
 }
 
 .article-content {
-    height: inherit;
+    height: max-content;
 }
 
-#about-me .article-content {
-    background-color: #3a4a5d;
+#home .article-content {
+
 }
 
 #skills .article-content {
-    background-color: #1b2838;
+
 }
