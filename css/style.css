@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #16323a;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main {
+    grid-gap: 25px;
+    padding: 25px;
+    grid-template: calc(100vh - 50px) / 200px minmax(400px, auto);
+}
+
+.navigation {
+    height: 100%;
+    background-color: #16323a;
+    box-shadow: 0 0 20px #000;
+    overflow: hidden;
+}
+
+nav > .avatar {
+    height: 200px;
+    margin: 10px;
+}
+
+nav > ul.un-styled {
+    list-style: none;
+}
+
+nav .menu-links a {
+    display: block;
+    padding: 6px 12px;
+    color: #869cb1;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-size: 13px;
+    transition: all 0.2s ease-in-out 0s;
+    border-top: 1px solid #3a4a5d;
+    border-bottom: 1px solid #22303e;
+}
+
+nav .menu-links a i{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.2s ease-in-out 0s;
+    line-height: 30px;
+    margin-right: 12px;
+    box-shadow: inset 0 0 15px 0 #1b2838;
+}
+
+nav .menu-links a:hover {
+    color: #fff;
+}
+
+nav .menu-links a i:hover{
+    background-color: dodgerblue;
+    box-shadow: none;
+}
