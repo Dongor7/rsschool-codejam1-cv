@@ -12,16 +12,17 @@ body {
     background: #16323a;
 }
 
-h1, h3 {
+h1, h2, h3 {
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-family: sans-serif;
-    font-weight: 100;
     margin: 10px 0;
 }
 
-h1 {
+h1, h2 {
     color: #d03d3d;
+}
+
+h1 {
     font-size: 40px;
 }
 
@@ -91,7 +92,7 @@ nav .menu-links a:hover {
 }
 
 nav .menu-links a i:hover{
-    background-color: dodgerblue;
+    background-color: #d03d3d;
     box-shadow: none;
 }
 
@@ -102,6 +103,14 @@ nav .menu-links a i:hover{
     box-shadow: 0 0 20px #000;
     overflow: hidden;
     scroll-behavior: smooth;
+    color: #BBB;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.content li {
+    margin: 3px 0;
 }
 
 article {
@@ -118,6 +127,7 @@ article {
 
 }
 
-#skills .article-content {
-
+#skills .article-content section {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
 }
