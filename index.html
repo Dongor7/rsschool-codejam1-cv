@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+
+    <main class="grid main container">
+        <nav class="navigation">
+            <div class="avatar">
+                <video id='avatar' width="180" height="200" loop autoplay muted>
+                    <source src="avatar.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+
+            </div>
+            <ul class="un-styled menu-links">
+                <li>
+                    <a href="#home">
+                        <i class="fas fa-user"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fa fa-laptop"></i>
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#code-example">
+                        <i class="fa fa-code"></i>
+                        Code example
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        <i class="fab fa-cogs" aria-hidden="true"></i>
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <i class="fab fa-graduation-cap" aria-hidden="true"></i>
+                        Education
+                    </a>
+                </li>
+                <li>
+                    <a href="#summary">
+                        <i class="fab fa-envira"></i>
+                        Summary
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact-me">
+                        <i class="fab fa-grav"></i>
+                        Contact me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <article class="grid" id="home">
+                <div class="article-content">
+                    <h3>Hi, I am</h3>
+                    <h1>Denis Sidorenko</h1>
+                    <h3>and you are welcome!</h3>
+                </div>
+            </article>
+            <article class="grid" id="skills">
+                <div class="article-content">
+                    <h2>Key skills include</h2>
+                    <section class="grid key-skills ">
+                        <div>
+                            <ul>
+                                <li>English B1</li>
+                                <li>Team work</li>
+                                <li>Leader</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Problem solving</li>
+                                <li>Communicate </li>
+                                <li>Responsible</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Plodding</li>
+                                <li>Knack for technologies</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h2>Technical Skills</h2>
+                    <section class="grid technical-skills">
+                        <div>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>BootstrapS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>React</li>
+                                <li>NodeJS</li>
+                                <li>JavaEE</li>
+                                <li>Spring Framework</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>PHP</li>
+                                <li>SQL</li>
+                                <li>MySQL</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <article class="grid" id="code-example">
+                <div class="article-content">
+                    <h2>NodeJs Code example</h2>
+                    <pre>
+    const Koa = require('koa');
+    const Router = require('koa-router');
+    const Cors = require('@koa/cors');
+    const BodyParser = require('koa-bodyparser');
+    const Helmet = require('koa-helmet');
+    const respond = require('koa-respond');
+    const mongoose = require('mongoose');
+
+    const app = new Koa();
+    const router = new Router();
+
+    app.use(Helmet());
+
+    app.use(Cors());
+    app.use(BodyParser({
+    enableTypes: ['json'],
+    jsonLimit: '5mb',
+    strict: true,
+    onerror: function (err, ctx) {
+    ctx.throw('body parse error', 422)
+    }
+    }));
+
+    app.use(respond());
+
+    require('./routes')(router);
+    app.use(router.routes());
+    app.use(router.allowedMethods());
+    app.use(require('koa-static')('./build'));
+
+    mongoose.connect('mongodb://Dongor7:123qwe@ds161520.mlab.com:61520/full');
+
+    module.exports = app;
+                    </pre>
+                </div>
+            </article>
+            <article class="grid" id="experience">
+                <div class="article-content">
+                    <h2>Working experience</h2>
+                    <ul>
+                        <li>BELWEBGROUP – Web Developer, April 2018 – May 2018</li>
+                        <li>Envision – Web Developer, May 2018 – Present</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="grid" id="education">
+                <div class="article-content">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Gomel State University, Faculty of Mathematics and Programming Technologies, 2017</li>
+                        <li>Courses from ITSupportMe. Specialize in Java and Spring Framework (web-development) </li>
+                        <li>Courses from RS School (EPAM). Specialize in Frontend.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="grid" id="summary">
+                <div class="article-content">
+                    <h2>Summery</h2>
+                    <div>
+                        I’m an easy-going, kind person. In general, I don’t have difficulties in communication with
+                        people and I can adjust to new environment. I’m rather self-confident and self-reliant. Also I
+                        used to play volleyball professionally, moreover, I was the captain. Therefore, I have some team
+                        lead skills and experience in being in charge of people. Also I’m ready to take the challenge.
+                        In summer holidays I went to Russia and worked for a building company 13 hours per day and
+                        almost without weekends. So I’m hard-worker, diligent, persistent and I can work in a team no
+                        matter how hard the working conditions are.  I have a strong motivation to work because I have
+                        been leaving on my own with my girlfriend together for a year and thinking about marriage and a
+                        child. I’m eager to develop and want to grow up both professionally and financially.
+                    </div>
+                </div>
+            </article>
+            <article class="grid" id="contact-me">
+                <div class="article-content">
+                    <h2>Contact me</h2>
+                    <div class="grid contacts">
+                        <div class="grid email">
+                            <h3>Email</h3>
+                            <div>dongor7@gmail.com</div>
+                        </div>
+                        <div class="grid phone">
+                            <h3>Phone</h3>
+                            <div>+375(44)737-36-45</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+</html>
