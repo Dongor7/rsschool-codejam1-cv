@@ -83,4 +83,23 @@ nav .menu-links a i:hover{
     background-color: #16323a;
     border-radius: 3px;
     box-shadow: 0 0 20px #000;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+article {
+    height: 100%;
+    padding: 20px;
+}
+
+.article-content {
+    height: inherit;
+}
+
+#about-me .article-content {
+    background-color: #3a4a5d;
+}
+
+#skills .article-content {
+    background-color: #1b2838;
 }
