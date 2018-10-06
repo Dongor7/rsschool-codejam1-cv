@@ -132,10 +132,12 @@ article {
     margin: 30px;
 }
 
-#experience .article-content ul {
+#experience .article-content ul,
+#education .article-content ul {
     margin: 30px;
 }
 
-#experience .article-content ul li {
+#experience .article-content ul li,
+#education .article-content ul li{
     margin: 15px 0;
 }
