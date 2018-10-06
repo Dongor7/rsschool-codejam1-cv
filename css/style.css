@@ -77,3 +77,10 @@ nav .menu-links a i:hover{
     background-color: dodgerblue;
     box-shadow: none;
 }
+
+.content {
+    height: 100%;
+    background-color: #16323a;
+    border-radius: 3px;
+    box-shadow: 0 0 20px #000;
+}
