@@ -123,21 +123,28 @@ article {
     height: max-content;
 }
 
-#home .article-content {
-
-}
-
-#skills .article-content section {
+#skills > .article-content section {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 30px;
 }
 
-#experience .article-content ul,
-#education .article-content ul {
+#experience > .article-content ul,
+#education > .article-content ul {
     margin: 30px;
 }
 
-#experience .article-content ul li,
-#education .article-content ul li{
+#experience > .article-content ul > li,
+#education > .article-content ul > li{
     margin: 15px 0;
 }
+
+#contact-me .contacts {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact-me .contacts > div {
+    justify-content: center;
+}
+
+
