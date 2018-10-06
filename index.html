@@ -31,9 +31,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#code-examples">
+                    <a href="#code-example">
                         <i class="fa fa-code"></i>
-                        Code examples
+                        Code example
                     </a>
                 </li>
                 <li>
@@ -125,13 +125,12 @@
                     </section>
                 </div>
             </article>
-            <article class="grid" id="code-examples">
+            <article class="grid" id="code-example">
                 <div class="article-content">
                     <h2>NodeJs Code example</h2>
                     <pre>
     const Koa = require('koa');
     const Router = require('koa-router');
-    const Logger = require('koa-logger');
     const Cors = require('@koa/cors');
     const BodyParser = require('koa-bodyparser');
     const Helmet = require('koa-helmet');
@@ -142,10 +141,6 @@
     const router = new Router();
 
     app.use(Helmet());
-
-    if (process.env.NODE_ENV === 'development') {
-    app.use(Logger())
-    }
 
     app.use(Cors());
     app.use(BodyParser({
@@ -159,7 +154,6 @@
 
     app.use(respond());
 
-    // API routes
     require('./routes')(router);
     app.use(router.routes());
     app.use(router.allowedMethods());
@@ -173,7 +167,11 @@
             </article>
             <article class="grid" id="experience">
                 <div class="article-content">
-
+                    <h2>Working experience</h2>
+                    <ul>
+                        <li>BELWEBGROUP – Web Developer, April 2018 – May 2018</li>
+                        <li>Envision – Web Developer, May 2018 – Present</li>
+                    </ul>
                 </div>
             </article>
             <article class="grid" id="education">

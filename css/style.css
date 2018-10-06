@@ -131,3 +131,11 @@ article {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 30px;
 }
+
+#experience .article-content ul {
+    margin: 30px;
+}
+
+#experience .article-content ul li {
+    margin: 15px 0;
+}
