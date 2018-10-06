@@ -28,7 +28,7 @@ body {
 }
 
 .navigation {
-    height: 100%;
+    height: min-content;
     background-color: #16323a;
     box-shadow: 0 0 20px #000;
     overflow: hidden;
